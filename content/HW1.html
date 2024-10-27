@@ -165,6 +165,11 @@ img.add_border {
 <p>solvespace:</p>
 <p><a href="https://s104.cycu.org/~41023109/41023109_ex1.stl">41023109_ex1 </a></p>
 <p><a href="https://s104.cycu.org/~41023109/41023109_lesson2_1.stl">lesson2_1 </a></p>
+<p><a href="https://s104.cycu.org/~41023109/41023109_lesson2_2.stl">lesson2_2 </a></p>
+<p><a href="https://s104.cycu.org/~41023109/41023109_lesson2_5.stl">lesson2_5 </a></p>
+<p><a href="https://s104.cycu.org/~41023109/41023109_lesson2_6.stl">lesson2_6 </a></p>
+<p><a href="https://s104.cycu.org/~41023109/41023109_lesson2_7.stl">lesson2_7 </a></p>
+<p><a href="https://s104.cycu.org/~41023109/41023109_lesson2_8.stl">lesson2_8 </a></p>
 <p style="padding-left: 30px;"><a p="">
 <script src="./../cmsimde/static/jsc3d.js" type="text/javascript"></script>
 </a></p>
@@ -225,12 +230,23 @@ function openByUrl(){
     // 可以添加更多的 STL URL
     readSTLfile(opt, 'cv1'); // 為每個 canvas 調用
     readSTLfile(opt, 'cv2'); // 第二個 canvas
+    readSTLfile(opt, 'cv3'); // 第三個 canvas
+    readSTLfile(opt, 'cv4'); // 第四個 canvas
+    readSTLfile(opt, 'cv5'); // 第五個 canvas
+    readSTLfile(opt, 'cv6'); // 第六個 canvas
+    readSTLfile(opt, 'cv7'); // 第七個 canvas
+    readSTLfile(opt, 'cv8'); // 第八個 canvas
 }
 
 function openByGet(){
     var urls = [
         "https://s104.cycu.org/~41023109/41023109_ex1.stl",
         "https://s104.cycu.org/~41023109/41023109_lesson2_1.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_2.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_5.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_6.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_7.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_8.stl"
     ];
     var opt = getOptions();
     urls.forEach((url, index) => {

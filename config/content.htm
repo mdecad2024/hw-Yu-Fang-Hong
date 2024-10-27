@@ -108,12 +108,23 @@ function openByUrl(){
     // 可以添加更多的 STL URL
     readSTLfile(opt, 'cv1'); // 為每個 canvas 調用
     readSTLfile(opt, 'cv2'); // 第二個 canvas
+    readSTLfile(opt, 'cv3'); // 第三個 canvas
+    readSTLfile(opt, 'cv4'); // 第四個 canvas
+    readSTLfile(opt, 'cv5'); // 第五個 canvas
+    readSTLfile(opt, 'cv6'); // 第六個 canvas
+    readSTLfile(opt, 'cv7'); // 第七個 canvas
+    readSTLfile(opt, 'cv8'); // 第八個 canvas
 }
 
 function openByGet(){
     var urls = [
         "https://s104.cycu.org/~41023109/41023109_ex1.stl",
         "https://s104.cycu.org/~41023109/41023109_lesson2_1.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_2.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_5.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_6.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_7.stl"
+        "https://s104.cycu.org/~41023109/41023109_lesson2_8.stl"
     ];
     var opt = getOptions();
     urls.forEach((url, index) => {
@@ -196,7 +207,7 @@ openByGet();
 <p style="padding-left: 30px;"><a href="https://github.com/mdecycu/DingoQuadruped">https://github.com/mdecycu/DingoQuadruped</a></p>
 <p style="padding-left: 30px;"><a href="http://229.cycu.org/DINGO_QUADRUPED_CAD.7z">DINGO_QUADRUPED_CAD.7z</a></p>
 <p style="padding-left: 30px;"><img alt="" height="217" src="https://mde.tw/cad2024/images/dingo.png" width="400"/></p>
-<hr>
+<hr/>
 <p>利用 CoppeliaSim 建立 <a href="https://mde.tw/cad2024/content/Quadruped.html">Dingo 機器狗</a>控制系統設計模擬場景的操作過程與說明影片如下:</p>
 <p style="padding-left: 30px;">影片標題: 國立虎尾科技大學機械設計工程系電腦輔助設計與實習- 作業四</p>
 <p style="padding-left: 30px;">所完成的場景與控制程式檔案下載</p>
@@ -218,4 +229,4 @@ openByGet();
 <p>電腦輔助設計與實習課程總結心得:</p>
 <p style="padding-left: 30px;">......</p>
 <p>期末報告自評成績:</p>
-<p style="padding-left: 30px;">完成上述流程後, 請將 Final Report 自評分數輸入 cad2024 自評表單中.</p></hr>
+<p style="padding-left: 30px;">完成上述流程後, 請將 Final Report 自評分數輸入 cad2024 自評表單中.</p>
