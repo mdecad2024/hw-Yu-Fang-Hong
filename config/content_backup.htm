@@ -185,7 +185,11 @@ openByGet();
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sDl22qpUiSI?si=QQnCsybPNJxe4hZ9" title="YouTube video player" width="560"></iframe></p>
 <p>solvespace: <a href="https://s104.cycu.org/~41023109/41023109_題目一_1.slvs">題目一.slvs</a></p>
 <script src="/static/jsc3d.js" type="text/javascript"></script>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
+<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas>
+<p>題目二</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/phwWccXqlaw?si=A_EskjV29XotFRG3" title="YouTube video player" width="560"></iframe></p>
+<p>solvespace: <a href="https://s104.cycu.org/~41023109/41023109_題目二.slvs">題目二.slvs</a></p>
+<div id="models"><canvas height="300" id="cv2" style="border: 1px solid;" width="400"> </canvas> <!-- 可以添加更多的 canvas --></div>
 <div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
 <option>Flat</option>
 <option>Point</option>
@@ -240,12 +244,14 @@ function openByUrl(){
     opt.SceneUrl = url;
     // 可以添加更多的 STL URL
     readSTLfile(opt, 'cv1'); // 為每個 canvas 調用
+    readSTLfile(opt, 'cv2'); 
 
 }
 
 function openByGet(){
     var urls = [
         "https://s104.cycu.org/~41023109/41023109_題目一_1.stl",
+        "https://s104.cycu.org/~41023109/41023109_題目二.stl"
 
     ];
     var opt = getOptions();
@@ -257,7 +263,7 @@ function openByGet(){
 
 openByGet();
 </script>
-<h2>W1</h2>
+</div><h2>W1</h2>
 <p>影片上字幕</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6oJD8WNSUM0?si=gLAMmQiOLRPI2MLy" title="YouTube video player" width="560"></iframe><br/><br/></p>
 <h1>HW2</h1>
@@ -467,7 +473,7 @@ openByGet();
 <p>我負責繪製</p>
 <p><span>Piece métalique gauche_sldprt.prt</span></p>
 <p><span>Support Bobine_sldprt.prt</span></p>
-<h1><span>w12_ch</span></h1>
+<h1>w12_ch</h1>
 <p><span></span></p>
 <h1>Final Report</h1>
 <p>期末口頭與書面專題報告 (30%)</p>
